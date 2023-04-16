@@ -462,24 +462,22 @@
         </div>
         <div class="subscribe-container">
           <p class="footer-soc-text">Subscribe</p>
-          <form>
-            <div class="subscribe-wrap">
-              <label aria-label="footer-input-subscribe">
-                <input
-                  class="subscribe-input"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button type="submit" class="subscribe-btn">
-                <span class="subscribe-text">Subscribe</span>
-                <svg class="icon-send" widht="24" height="20">
-                  <use href="./images/form.svg#icon-icon_send"></use>
-                </svg>
-              </button>
-            </div>
+          <form class="subscribe-wrap">
+            <label aria-label="footer-input-subscribe">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="subscribe-btn">
+              <span class="subscribe-text">Subscribe</span>
+              <svg class="icon-send" widht="24" height="20">
+                <use href="./images/form.svg#icon-icon_send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -529,7 +527,7 @@
           <label class="form-subtitle">
             <span>Comment</span>
             <textarea
-              class="textarea-input"
+              class="textarea-input textarea"
               name="comment"
               placeholder="Text input"
             ></textarea>
@@ -550,10 +548,9 @@
               </span>
               I accept the terms and conditions of the
               <a class="privasy-link" href="">Privacy Policy </a>
+              <button type="submit" class="send-btn">Send</button>
             </label>
           </div>
-
-          <button type="submit" class="order-button send-btn">Send</button>
         </form>
       </div>
     </div>

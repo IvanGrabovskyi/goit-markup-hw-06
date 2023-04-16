@@ -259,7 +259,7 @@ nav {
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 576px;
-  padding: 24px;
+  padding: 72px 24px 24px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -272,9 +272,12 @@ nav {
 }
 
 .close-btn {
-  position: relative;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
+  cursor: pointer;
   background: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -310,8 +313,7 @@ nav {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
 }
 
@@ -323,10 +325,15 @@ nav {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #8e8f99;
+  display: block;
+  margin-bottom: 8px;
+}
+.textarea {
+  margin-bottom: 16px;
 }
 .form-subtitle span {
   display: block;
-  margin-top: 8px;
+
   margin-bottom: 4px;
 }
 .modal-wrap {
@@ -338,6 +345,8 @@ nav {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  outline: transparent;
+  transition: color 250ms var(--web-text-color);
 }
 .modal-icon {
   position: absolute;
@@ -345,6 +354,7 @@ nav {
   left: 16px;
   transform: translateY(-50%);
   fill: #2e2f42;
+  transition: color 250ms var(--web-text-color);
 }
 .modal-input:focus {
   border: 1px solid #4d5ae5;
@@ -359,6 +369,8 @@ nav {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
+  padding-top: 8px;
+  padding-left: 16px;
 }
 .textarea-input::placeholder {
   font-family: "Roboto";
@@ -368,8 +380,6 @@ nav {
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  padding-top: 8px;
-  padding-left: 16px;
 }
 .check-text {
   display: flex;
@@ -380,8 +390,6 @@ nav {
   line-height: 14px;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  padding-top: 16px;
-  padding-bottom: 24px;
 }
 .check-text span {
   width: 16px;
@@ -393,6 +401,9 @@ nav {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+.modal-feild {
+  margin-bottom: 24px;
 }
 .privasy-link {
   text-decoration: underline;
@@ -409,8 +420,26 @@ nav {
   border-radius: 2px;
 }
 .send-btn {
+  font-family: "Roboto", sans-serif;
+  min-width: 169px;
+  padding: 16px 32px;
+  border: none;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: #ffffff;
+  transition: background-color 250ms var(--transition-timing-function);
   display: block;
   margin: 0 auto;
+}
+.send-btn:focus {
+  background-color: var(--hover-focus-color);
+  transition: transform 250ms var(--transition-timing-function);
 }
 /* SECTION 2 ABOUT US */
 .section-about-us {
@@ -683,7 +712,10 @@ nav {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: #ffffff;
+  padding-left: 16px;
 }
+
 .subscribe-input::placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -694,7 +726,7 @@ nav {
   align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
-  padding: 8px 0 8px 16px;
+  padding: 8px 0;
 }
 .subscribe-wrap {
   display: flex;
@@ -710,6 +742,7 @@ nav {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-left: 24px;
+  cursor: pointer;
   transition: background-color 250ms var(--transition-timing-function);
 }
 .subscribe-btn:hover,
